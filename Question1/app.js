@@ -3,6 +3,21 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
+const registerData = {
+  companyName: "Affordmed",
+  clientID: "f91e8dfb-da52-41c7-860b-ae3bab637e61",
+  clientSecret: "QWDhNloKCzjVTALo",
+  ownerName: "Apoorv",
+  ownerEmail: "apoorvsrivastava2121@gmail.com",
+  rollNo: "2100970130023",
+};
+
+const authToken = {
+  token_type: "Bearer",
+  access_token:
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzE3MDYxNTMxLCJpYXQiOjE3MTcwNjEyMzEsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImY5MWU4ZGZiLWRhNTItNDFjNy04NjBiLWFlM2JhYjYzN2U2MSIsInN1YiI6ImFwb29ydnNyaXZhc3RhdmEyMTIxQGdtYWlsLmNvbSJ9LCJjb21wYW55TmFtZSI6IkFmZm9yZG1lZCIsImNsaWVudElEIjoiZjkxZThkZmItZGE1Mi00MWM3LTg2MGItYWUzYmFiNjM3ZTYxIiwiY2xpZW50U2VjcmV0IjoiUVdEaE5sb0tDempWVEFMbyIsIm93bmVyTmFtZSI6IkFwb29ydiIsIm93bmVyRW1haWwiOiJhcG9vcnZzcml2YXN0YXZhMjEyMUBnbWFpbC5jb20iLCJyb2xsTm8iOiIyMTAwOTcwMTMwMDIzIn0.YtdfWgUrms7sk7g5WLbueGaNyP3IeiHCxta25b6Ro2U",
+  expires_in: 1717061531,
+};
 const app = express();
 const PORT = process.env.PORT || 3000;
 
